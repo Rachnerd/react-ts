@@ -8,6 +8,6 @@ export interface TodoProps {
 
 export class TodoItem extends React.Component<TodoProps, undefined> {
     render() {
-        return <h1>{this.props.content} {this.props.createdAt.getFullYear()}</h1>;
+        return <h1>{this.props.content}</h1>;
     }
 }
