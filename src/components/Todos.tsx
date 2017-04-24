@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { TodoItem, TodoProps } from './Todo';
-import { MyTestClass } from './utils';
 
 export interface TodosProps {
     title: string;
@@ -26,8 +25,6 @@ const todos: Array<TodoProps> = [
 
 export class Todos extends React.Component<TodosProps, undefined> {
     render() {
-        const testClass = new MyTestClass();
-        testClass.myTestFn('bar');
         return <ul>
             {
                 todos

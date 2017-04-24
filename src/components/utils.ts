@@ -1,5 +1,6 @@
-
-
+/**
+ * Decorator example
+ */
 function log(target: Object, propertyKey: string, descriptor: TypedPropertyDescriptor<any>) {
     let originalMethod = descriptor.value; // save a reference to the original method
 
