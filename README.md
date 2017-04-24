@@ -9,12 +9,7 @@ npm install -g webpack
 # Run
 ## Dev
 ```
-npm run webpack
-```
-
-## Dev watch
-```
-npm run webpack -- -w
+npm run webpack-dev
 ```
 
 ## Prod

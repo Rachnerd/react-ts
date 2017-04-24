@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { TodoItem, TodoProps } from './Todo';
+import { Todo, TodoProps } from './Todo';
 
 export interface TodosProps {
     title: string;
@@ -30,7 +30,7 @@ export class Todos extends React.Component<TodosProps, undefined> {
                 todos
                     .map((todo: TodoProps, i: number) =>
                         <li key={i} >
-                            <TodoItem content={todo.content} createdAt={todo.createdAt} done={todo.done}/>
+                            <Todo content={todo.content} createdAt={todo.createdAt} done={todo.done}/>
                         </li>
                     )
             }
